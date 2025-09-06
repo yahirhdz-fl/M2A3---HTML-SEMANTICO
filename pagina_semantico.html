@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mi Blog Personal</title>
+    <style>
+        body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 900px; margin: 2rem auto; line-height: 1.5; }
+        header, nav, main, aside, footer, article, section { padding: 12px; border: 1px solid #ddd; margin-bottom: 12px; }
+        nav a { margin-right: 8px; }
+        .label { font-weight: bold; }
+        .date  { color: #666; }
+        blockquote { margin: 0 0 1rem; padding-left: 1rem; border-left: 4px solid #ddd; }
+        blockquote footer { color: #555; }
+        @media (min-width: 800px){
+        .layout { display: grid; grid-template-columns: 2fr 1fr; gap: 12px; }
+        .layout > main, .layout > aside { margin: 0; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mi Blog Personal</h1>
+        <nav aria-label="Navegación principal">
+        <a href="#">Inicio</a>
+        <a href="#">Artículos</a>
+        <a href="#">Contacto</a>
+        </nav>
+    </header>
+
+    <div class="layout">
+        <main id="contenido">
+        <article>
+            <header>
+            <h2>Novedades de HTML5</h2>
+            <p class="date">Publicado el <time datetime="2024-12-20">20/12/2024</time></p>
+            </header>
+
+            <p>HTML5 trae nuevas etiquetas <em>muy interesantes</em> para mejorar la web.</p>
+
+            <blockquote>
+            <p>“a uniquely portable magic”</p>
+            <footer>— Stephen King, <cite>On Writing</cite></footer>
+            </blockquote>
+
+            <p><span class="label">URL:</span> <a href="https://www.example.com">https://www.example.com</a></p>
+            <p>Visita a la <abbr title="World Health Organization">WHO</abbr> para más información.</p>
+
+            <p>Como dijo un colega: <q cite="https://www.example.com/articulo-semantic">la semántica guía al navegador y al lector</q>.</p>
+        </article>
+        </main>
+
+        <aside aria-labelledby="aside-title">
+        <section>
+            <h2 id="aside-title">Acerca de</h2>
+            <p>Desarrollador web y escritor ocasional.</p>
+        </section>
+        <section>
+            <h2>Contacto</h2>
+            <address>
+            <span class="label">Email:</span> <a href="mailto:contacto@ejemplo.com">contacto@ejemplo.com</a>
+            </address>
+        </section>
+        </aside>
+    </div>
+
+    <footer>
+        <p>© 2025 Mi Sitio</p>
+        <p>Hecho con <em>café</em> y paciencia.</p>
+    </footer>
+</body>
+</html>
+
+<!--Yahir Alejandro Hernández Flores - 631670
+DOY MI PALABRA DE QUE HE REALIZADO ESTA ACTIVIDAD CON INTEGRIDAD ACADÉMICA. -->
